@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<title>Poke Search</title>
+
+		<style>
+
+			.mainImg {
+				height: 200px;
+				width: 200px;
+			}
+			.body {
+				font-family: sans-serif;
+			}
+
+			.mainInp {
+				width: 40%;
+				height: 25px;
+			}
+
+		</style>
+
+		<body class='body'>
+			<center>
+				<h1>Poke Search</h1>
+				<!-- <img class='mainImg' src='http://assets.stickpng.com/images/580b57fcd9996e24bc43c325.png'> -->
+				<img class='mainImg' src='https://i.pinimg.com/originals/47/6f/fc/476ffc83637891f004e1ba6e1ca63e6c.jpg'>
+				<br /><br /><br /><br /><br /><br /><br /><br />
+				<form method="POST">
+					<input name='pokeNameInp' class='mainInp' placeholder="Enter Pokemon Name" />
+				</form>
+				<br /><br /><br /><br />
+				<h3>Search Results</h3>
+				<hr />
+				<p>
+					The Base Attack Of the Pokemon {{ pokemon_name}} is: 
+					{{ base_attack }}
+					<hr />
+					The Base Defense Of the Pokemon {{ pokemon_name}} is: 
+					{{ base_defence }}
+					<hr />
+					The Base Stamina Of the Pokemon {{ pokemon_name}} is:
+					{{ base_stamina }}
+					<hr />
+				</p>
+			</center>
+		</body>
+	</head>
+</html>
